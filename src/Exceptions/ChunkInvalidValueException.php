@@ -19,7 +19,7 @@ class ChunkInvalidValueException extends \Exception
     public function __construct(
         $message = 'The chunk parameters are invalid',
         $code = 500,
-        Exception $previous = null
+        ?Exception $previous = null
     ) {
         parent::__construct($message, $code, $previous);
     }

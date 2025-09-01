@@ -17,7 +17,7 @@ class UploadMissingFileException extends \Exception
      *
      * @since 5.1.0
      */
-    public function __construct($message = 'The request is missing a file', $code = 400, Exception $previous = null)
+    public function __construct($message = 'The request is missing a file', $code = 400, ?Exception $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
